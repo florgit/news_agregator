@@ -14,7 +14,6 @@ cursor = connection.cursor()
 cursor.execute("SELECT * FROM news")
 news_data = cursor.fetchall()
 connection.close()
-print(news_data)
 
 app = Flask(__name__)
 
